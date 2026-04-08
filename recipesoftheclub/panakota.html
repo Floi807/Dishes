@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Панакота с агар-агаром</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" href="/Dishes/img/favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border: solid 5px #1B263B;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #1B263B;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #1B263B;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border: solid 5px #1B263B;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #1B263B;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #1B263B;
+    }
+
+    h2{
+        margin-left: 50px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    h5{
+
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        width: 353px;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .row1{
+        margin-top: 20px;
+        margin-right: 60px;
+    }
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+  min-width: 0; /* важно для переноса */
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #bbbbbb6d;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+
+
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+    .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #bbbbbb6d;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Панакота с агар-агаром</h1>
+        </div>
+
+        <img src="/Dishes/img/panakota/panakota.jpg" class="bn" alt="Панакота">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Ниже я расскажу подробнее, как приготовить панна котта с агар-агаром. При приготовлении десерта можно добавить для аромата ванильный экстракт. Ягоды для соуса можно выбрать любые на свой вкус, пойдет и заморозка. Агар-агар для рецепта использовался с желирующей силой 900.</h4>
+    
+        <h2>Состав / Ингредиенты:</h2>
+        <div class="he5">
+            <div class="row">
+                <span>Сливки<br><small>(33% жирности)</small></span>
+                <span>200 мл</span>
+            </div>
+            <div class="row">
+                <span>Молоко<br><small>(3,2% жирности)</small></span>
+                <span>200 мл</span>
+            </div>
+            <div class="row">
+                <span>Агар-агар<br></span>
+                <span>1,5 ч.ложки</span>
+            </div>
+            <div class="row">
+                <span>Сахар<br></span>
+                <span>50 грамм</span>
+            </div>
+            <div class="row1">
+                <span>Соусы:<br></span>
+            </div>
+            <div class="row">
+                <span>Ягоды<br></span>
+                <span>10 грамм</span>
+            </div>
+            <div class="row">
+                <span>Сахар<br></span>
+                <span>20 грамм</span>
+            </div>
+        </div>
+        <h2>Количество порций: 2</h2>
+        <h2 class="cr">Как приготовить "Панакота с агар-агаром"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="/Dishes/img/panakota/1.jpg" class="et1">
+        <p>Подготовьте все необходимые ингредиенты чтобы приготовить Панакота с агар-агаром.</p>
+        </div>
+        <div class="et">
+        <img src="/Dishes/img/panakota/2.jpg" class="et1">
+        <p>В сотейнике соедините молоко со сливками.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/panakota/3.jpg" class="et1">
+            <p>Добавьте сахар и агар-агар.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/panakota/4.jpg" class="et1">
+            <p>Все перемешайте венчиком, чтобы не оставалось комочков. После нагрейте на медленном огне до кипения, постоянно помешивая. Проварите 1-2 минуты и снимайте с плиты.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/panakota/5.jpg" class="et1">
+            <p>Разлейте смесь по формочкам. Я использую обычную небольшую пиалу. Уберите в холодильник на 1-2 часа, чтобы десерт застыл.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/panakota/6.jpg" class="et1">
+            <p>Для ягодного соуса объедите в небольшом ковшике ягоды и сахар. Доведите до кипения и проварите пару минут, чтобы они пустили сок.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/panakota/7.jpg" class="et1">
+            <p>Протрите через сито, чтобы убрать косточки и шкурки.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/panakota/8.jpg" class="et1">
+            <p>Извлеките панна котту из формы. Чтобы это было проще сделать, можно подержать пиалу в горячей воде.</p>
+        </div>
+        <div class="et2">
+            <img src="/Dishes/img/panakota/9.jpg" class="et1">
+            <p>Сверху полейте ягодным соусом и<br> Панна котта с агар-агаром готова, приятного вам аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>

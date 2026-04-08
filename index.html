@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Мир рецептов</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Evgeni">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Сайт об кулинарных рецептов">
+        <meta name="keywords" content="Рецепты,кулинарных,блюда">
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/png" href="img/favicon.png">
+    </head>
+    <body>
+        <div class="menu">
+          <div>
+            <img class="favicon" src="img/favicon.png">
+          </div>
+          <h1 class="title">Мир рецептов — вкусные и простые блюда на каждый день</h1>
+         <div>
+          <button onclick="showPage('home')">Главная страница</button>
+          <a href="#footer"> 
+          <button>Обо мне</button>
+          </a>
+         </div> 
+        </div>
+
+        <div class="container">
+          <!--Главная-->
+    <div id="home" class="page active">
+      <article>
+        
+        <h1 class="titl">Рецепты</h1>
+        
+        <div class="search-container">
+            <form id="searchForm">
+            <input class="search-input" type="text" list="np-offices" name="dish" placeholder="Введите название блюда" maxlength="40">
+            <button class="reset-btn" type="reset">Очистить</button>
+            <datalist id="np-offices">
+              <option value="Борщ"></option>
+              <option value="Панакота с агар агаром"></option>
+              <option value="Рассыпчатый плов с говядиной"></option>
+              <option value="суп суюк ош"></option>
+              <option value="хачапури по-аджарски"></option>
+              <option value=""></option>
+            </datalist>
+          </form>
+        </div><br>
+        <div class="dishes-container">
+            <div class="dishes">
+              <a href="/Dishes/recipesoftheclub/borsh.html">
+              <div class="vs">
+                <img src="/Dishes/img/borsh/borsh.png" style="cursor:pointer;" class="br">
+              </a>
+                <h2 class="hp">Борщ</h2>
+                <p>Еще не знаете, какое первое блюдо сделать на обед? Я хочу показать вам несложный пошаговый способ, как приготовить самый вкусный борщ. Насыщенный, аппетитный и сытный… чудесная идея для всей семьи!</p>
+                   <img src="/Dishes/img/time.png" class="time1">
+                   <p class="time">1 час. 30 мин</p>
+              </div>
+            </div>
+
+            <div class="dishes">
+              <a href="/Dishes/recipesoftheclub/panakota.html">
+              <div class="vs">
+                <img src="/Dishes/img/panakota/panakota.jpg" style="cursor:pointer;" class="br">
+              </a>
+                <h2 class="hp">Панакота с агар агаром</h2>
+                <p>Панна котта — итальянский десерт-желе на основе жирных сливок. Делюсь рецептом приготовления панна котты с ягодным соусом, где в качестве желирующего компонента будем использоваться агар-агар</p>
+                   <img src="/Dishes/img/time.png" class="time1">
+                   <p class="time">2 часа</p>
+              </div>
+            </div>
+
+            <div class="dishes">
+              <a href="/Dishes/recipesoftheclub/plov.html">
+                
+              <div class="vs">
+                <img src="/Dishes/img/plov/plov.jpg" style="cursor:pointer;" class="br">
+              </a>
+                <h2 class="hp">Рассыпчатый плов с говядиной</h2>
+                <p>Приготовить рассыпчатый плов с говядиной в домашних условиях несложно. Блюдо получается изумительно вкусное. Порадуйте родных и близких вам людей!</p>
+                   <img src="/Dishes/img/time.png" class="time1">
+                   <p class="time">2 часа</p>
+              </div>
+            </div>
+
+            <div class="dishes">
+              <a href="/Dishes/recipesoftheclub/suk osh.html">
+                
+              <div class="vs">
+                <img src="/Dishes/img/suk osh/sup_quotsuiuk_oshquot.jpg" style="cursor:pointer;" class="br">
+              </a>
+                <h2 class="hp">Суп "Суюк ош"</h2>
+                <p>Уйгурский суп на основе мелко нарубленного мяса с домашней лапшой и овощами. Готовится не быстро, но результат того стоит. Получается ну очень вкусно!</p>
+                   <img src="/Dishes/img/time.png" class="time1">
+                   <p class="time">2 часа</p>
+              </div>
+            </div>
+
+            <div class="dishes">
+              <a href="/Dishes/recipesoftheclub/hachapuri.html">
+                
+              <div class="vs">
+                <img src="/Dishes/img/hachapuri/hachapuri_po-adjarski.jpg" style="cursor:pointer;" class="br">
+              </a>
+                <h2 class="hp">Хачапури<br> по-аджарски настоящий</h2>
+                <p>Приготовить хачапури по-аджарски настоящий в домашних условиях несложно. Это может быть и прекрасный сытный завтрак, а может заменить и полноценный ужин. Непременно попробуйте!</p>
+                   <img src="/Dishes/img/time.png" class="time1">
+                   <p class="time">2 часа</p>
+              </div>
+            </div>
+
+            <div class="dishes">
+              <a href="/Dishes/recipesoftheclub/shaurma.html">
+                
+              <div class="vs">
+                <img src="/Dishes/img/shaurma/shaurma_v_aerogrile.jpg" style="cursor:pointer;" class="br">
+              </a>
+                <h2 class="hp">Шаурма в аэрогриле</h2>
+                <p>Ищите рецепт домашней шаурмы? Расскажу, как приготовить шаурму в аэрогриле. Сочную, сытную, с большим количеством мяса и овощей. Получается ну очень вкусно!</p>
+                   <img src="/Dishes/img/time.png" class="time1">
+                   <p class="time">1 час</p>
+              </div>
+            </div>
+
+            <div class="dishes">
+
+            </div>
+        </div>
+        <div class="map-block">
+          <h3>Наше местоположение</h3>
+          <p class="map-address">📍 Судостроительная ул., 6/1, Калининград</p>
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?ll=20.486667%2C54.681111&z=15&pt=20.486667,54.681111,pm2rdm" allowfullscreen>
+          </iframe>   
+        </div>
+
+        <footer class="site-footer" id="footer">
+          <div class="container1">
+            <p>© Floi, 2026</p>
+            <p>Мир рецептов</p>
+          </div>
+        </footer>
+      </article>
+    </div>
+
+    <!--О компании-->
+    <div id="about-me" class="page">
+      <article>
+        <h1>Обо мне</h1>
+        <img class="avatar" src="img/avatar.avif">
+        <h3 class="about-me-h3"></h3>
+      </article>
+    </div>
+
+    <script src="main.js"></script>
+    </body>
+</html>

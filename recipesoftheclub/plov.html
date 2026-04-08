@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Рассыпчатый плов с говядиной</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" href="/Dishes/img/favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border: solid 5px #1B263B;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #1B263B;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #1B263B;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border: solid 5px #1B263B;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #1B263B;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #1B263B;
+    }
+
+    h2{
+        margin-left: 50px;
+        margin-top: 50px;
+        text-align: left;
+    }
+
+    h5{
+
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+    
+    .he5{
+        width: 353px;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+  min-width: 0; /* важно для переноса */
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #bbbbbb6d;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+
+
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+    .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #bbbbbb6d;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Рассыпчатый плов с говядиной</h1>
+        </div>
+
+        <img src="/Dishes/img/plov/plov.jpg" class="bn" alt="Панакота">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Один из лучших рецептов плова, адаптированный для приготовления дома на плите. Плов получается ароматный и рассыпчатый, с нежными и сочными кусочками мяса. Приготовьте это потрясающее кушанье и порадуйте родных! И для будней, и для праздничного стола — будет актуально!</h4>
+    
+        <h2>Состав / Ингредиенты:</h2>
+        <div class="he5">
+            <div class="row">
+                <span>Говядина<br></span>
+                <span>300 грамм</span>
+            </div>
+            <div class="row">
+                <span>Рис<br></span>
+                <span>250 грамм</span>
+            </div>
+            <div class="row">
+                <span>Морковь<br></span>
+                <span>250 грамм</span>
+            </div>
+            <div class="row">
+                <span>Лук<br></span>
+                <span>150 грам</span>
+            </div>
+            <div class="row">
+                <span>Чеснок<br><small>(3 целые головки)</small></span>
+                <span>1,5 штуки</span>
+            </div>
+            <div class="row">
+                <span>Растительное<br> масло<br></span>
+                <span>75 мл</span>
+            </div>
+            <div class="row">
+                <span>Специи<br></span>
+                <span>1 ч.ложки</span>
+            </div>
+            <div class="row">
+                <span>Соль<br></span>
+                <span>По вкусу</span>
+            </div>
+        </div>
+        <h2>Количество порций: 4</h2>
+        <h2 class="cr">Как приготовить "Рассыпчатый плов с говядиной"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="/Dishes/img/plov/1.jpg" class="et1">
+        <p>Подготовьте все ингредиенты по списку. Самый вкусный плов получается из баранины, телятины или говядины. В рецепте использовалась мякоть молодой говядины. Мясо промойте, обсушите и нарежьте небольшими кусочками.</p>
+        </div>
+        <div class="et">
+        <img src="/Dishes/img/plov/2.jpg" class="et1">
+        <p>Налейте в казан растительное масло без запаха, дождитесь момента, когда оно хорошо прогреется. Отправьте одну луковицу в масло обжариваться. Нарезка произвольная.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/3.jpg" class="et1">
+            <p>Когда лук станет золотистого цвета, удалите его из казана шумовкой.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/4.jpg" class="et1">
+            <p>Отправьте в казан мясо и обжарьте его до появления золотистого оттенка.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/5.jpg" class="et1">
+            <p>Периодически перемешивайте кусочки, чтоб они не подгорели. Огонь должен быть максимальный.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/6.jpg" class="et1">
+            <p>Налейте в казан немного воды, чтоб потушить мясо. Слегка посолите мясо, накройте казан крышкой и томите на среднем огне практически до готовности говядины. Время зависит от того на сколько молодое животное было и какую его часть вы используете.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/7.jpg" class="et1">
+            <p>У меня мясо было готово через 45 минут, но иногда требуется времени чуть больше (час-полтора). Если мясо уже готово, а жидкости в казане осталось много, то уберите крышку и выпарите лишнюю жидкость на максимальном огне.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/8.jpg" class="et1">
+            <p>Оставшийся лук нарежьте некрупно. Морковку нарубите брусочками, а одну очищенную головку чеснока разберите на зубчики и нарежьте их на 2-4 части. Отправьте овощи в казан. Так же добавьте специи по вкусу (у меня смесь для плова).</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/9.jpg" class="et1">
+            <p>Хорошо всё перемешайте и готовьте около 10-15 минут (практически до готовности моркови). В процессе мясо с овощами досолите по вкусу, если необходимо.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/10.jpg" class="et1">
+            <p>Оставшиеся головки чеснока очистите от верхней шелухи, промойте и выложите в центр.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/11.jpg" class="et1">
+            <p>Рис промойте несколько раз до прозрачной воды. Отправьте крупу в казан, распределите ровным слоем.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/12.jpg" class="et1">
+            <p>Залейте будущий плов водой так, чтоб жидкость покрывала рис на два пальца.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/13.jpg" class="et1">
+            <p>Накройте крышкой и на максимальном огне готовьте почти до полного выпаривания жидкости.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/14.jpg" class="et1">
+            <p>Затем соберите рис к центру.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/15.jpg" class="et1">
+            <p>Накройте рис тарелкой, а казан крышкой и готовьте на минимальном огне ещё 10 минут.</p>
+        </div>
+        <div class="et">
+            <img src="/Dishes/img/plov/16.jpg" class="et1">
+            <p>Снимите казан с плиты, укутайте полотенцем и дайте постоять ещё 20 минут. Рассыпчатый плов с говядиной готов. Аккуратно перемешайте и подавайте к столу.</p>
+        </div>
+        <div class="et2">
+            <img src="/Dishes/img/plov/17.jpg" class="et1">
+            <p>Приятного аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>
