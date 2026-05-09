@@ -30,14 +30,22 @@ body {
     background-color: rgb(150, 150, 160);
 }
 
-.favicon{ 
-    position: absolute; 
-    display: inline-block;
-    align-items: center; 
-    top: -40px; 
-    right: 1230px; 
-    width: 350px; 
-    height: 250px; 
+.favicon{
+    position: absolute;
+    top: -40px;
+    right: 1230px;
+    width: 350px;
+    height: 250px;
+}
+
+@media (max-width: 768px){
+    .favicon{
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 180px;
+        height: auto;
+    }
 }
 
 h1 {
@@ -165,6 +173,23 @@ h1 {
     align-items: flex-start;
     
 }
+@media (max-width: 1200px){
+    .dishes-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 1024px){
+    .dishes-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .dishes-container{
+        grid-template-columns: 1fr;
+    }
+}
 
 .map-block {
   background-color: #ffffffc9;
@@ -242,5 +267,46 @@ h1 {
 
 html {
   scroll-behavior: smooth;
+}
+
+@media (max-width: 768px){
+
+    .br{
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        float: none;
+        display: block;
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .block{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    p{
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .site-footer{
+        text-align: center;
+    }
+
 }
 
