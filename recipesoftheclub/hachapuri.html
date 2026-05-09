@@ -3,23 +3,23 @@
     <head>
         <title>Хачапури по-аджарски</title>
         <meta charset="UTF-8"/>
-        <link rel="icon" type="image/png" href="/Dishes/img/favicon.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/img/main/logo1-favicon.png">
         <style>
             body {
                 font-family: Arial, sans-serif;
                 padding: 20px;
                 background: #E0C397;
+                background-image: url(/img/main/background.avif);
                 text-align: center;
             }   
 
             h1 { 
                 color: #e2dddd;
-                border: solid 5px #1B263B;
                 border-radius: 15px;
-                box-shadow: 0 0 10px #1B263B;
+                box-shadow: 0 0 10px #000000;
                 display: inline-block;
                 padding: 10px 100px;
-                background-color: #1B263B;
+                background-color: #000000a4;
             }
 
             .container {
@@ -37,36 +37,45 @@
     h4{
         width: 750px;
         color: #e2dddd;
-        border: solid 5px #1B263B;
         border-radius: 15px;
-        box-shadow: 0 0 10px #1B263B;
+        box-shadow: 0 0 10px #000000;
         display: inline-block;
         padding: 10px 100px;
-        background-color: #1B263B;
+        background-color: #000000a4;
     }
 
     h2{
-        margin-left: 50px;
-        margin-top: 50px;
+        margin-left: 60px;
         text-align: left;
     }
 
-    .he5{
-        width: 353px;
+    h5{
+        text-align: left;
         border: solid 5px #1B263B;
         border-radius: 10px;
-        padding: 10px;
+
     }
 
-    .row1{
-        margin-bottom: 20px;
-        margin-right: 60px;
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 55px 10px;
+        background-image:url(/img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
     }
+
     .row{
         display: grid;
         margin-bottom: 10px;
         align-items: start;
         grid-template-columns: 1fr auto;
+        padding: 0 20px
     }
 /* пунктир между */
 .row::after {
@@ -77,7 +86,7 @@
 }
 
 .row span:first-child {
-  min-width: 0; /* важно для переноса */
+justify-self: start;
 }
 
 .row span:last-child {
@@ -102,7 +111,7 @@
   align-items: center;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: #bbbbbb6d;
+  background-color: #fae9d7c4;
   padding: 10px;
   counter-increment: step; /* увеличиваем счётчик */
 }
@@ -120,8 +129,6 @@
   font-size: 14px;
 }
     
-
-
     .et1{
         float: left;
         border-radius: 10px;
@@ -161,13 +168,13 @@
             <h1>Хачапури по-аджарски настоящий</h1>
         </div>
 
-        <img src="/Dishes/img/hachapuri/hachapuri_po-adjarski.jpg" class="bn" alt="Хачапури по-аджарски">
+        <img src="/img/hachapuri/hachapuri_po-adjarski.jpg" class="bn" alt="Хачапури по-аджарски">
         <br>
         <h1>Описание приготовления:</h1>
         <h4>Сытные и ароматные хачапури по этому рецепту покорят вас с первого укуса! Попробуйте и убедитесь в этом сами, это очень вкусно! Приготовив, вы окажетесь в полном восторге, тесто просто изумительное — не передать словами. Отломите кусочек, окуните его в сыр, сдобренный маслом и жидким желтком, а потом попробуйте отказаться от следующего кусочка. Поверьте, это сделать практически невозможно. Есть много разновидностей хачапури, этот рецепт, на мой взгляд — один из самых лучших!</h4>
     
-        <h2>Состав / Ингредиенты:</h2>
         <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
             <div class="row1">
                 <span>Тесто:<br></span>
             </div>
@@ -223,104 +230,104 @@
                 <span>По вкусу</span>
             </div>
             <div class="row">
-                <span>Желтки<br><small>(по факту)</small></span>
+                <span>Желтки<br><small>(по факту приготовления)</small></span>
                 <span>3-6 штук</span>
             </div>
             <div class="row">
-                <span>Сливочное масло<br><small>(по факту)</small></span>
+                <span>Сливочное масло<br><small>(по факту приготовления)</small></span>
                 <span>По вкусу</span>
             </div>
+            <h2>Количество порций: 6</h2>
         </div>
 
-        <h2>Количество порций: 6</h2>
         <h2 class="cr">Как приготовить "Хачапури по-аджарски настоящий"</h2><br>
         <div class="container1">
         <div class="et">
-        <img src="/Dishes/img/hachapuri/1.jpg" class="et1">
+        <img src="/img/hachapuri/1.jpg" class="et1">
         <p>Подготовьте все ингредиенты по списку. Помимо указанных продуктов на фото возьмите 3-6 желтков, в зависимости от того, какого размера вы будете готовить хачапури. Для начинки лучше всего использовать имеретинский сыр. Я такой у себя не нашла, поэтому сделала замену на кавказские сыры — адыгейский и сулугуни.</p>
         </div>
         <div class="et">
-        <img src="/Dishes/img/hachapuri/2.jpg" class="et1">
+        <img src="/img/hachapuri/2.jpg" class="et1">
         <p>В миску налейте тёплую воду и тёплое молоко, добавьте сахар и сухие дрожжи.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/3.jpg" class="et1">
+            <img src="/img/hachapuri/3.jpg" class="et1">
             <p>Перемешайте и дайте постоять 10-15 минут.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/4.jpg" class="et1">
+            <img src="/img/hachapuri/4.jpg" class="et1">
             <p>Затем добавьте соль, мягкое сливочное масло и яйцо.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/5.jpg" class="et1">
+            <img src="/img/hachapuri/5.jpg" class="et1">
             <p>Перемешайте.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/6.jpg" class="et1">
+            <img src="/img/hachapuri/6.jpg" class="et1">
             <p>Добавьте муку.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/7.jpg" class="et1">
+            <img src="/img/hachapuri/7.jpg" class="et1">
             <p>Я советую добавлять её частями, так как тесто должно быть очень мягкое. Даже у меня муки может уйти чуть больше или чуть меньше, но в среднем 460-500 грамм.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/8.jpg" class="et1">
+            <img src="/img/hachapuri/8.jpg" class="et1">
             <p>Когда тесто соберётся в единый комок — переходите работать на стол. Присыпаем его мукой и хорошенько вымешиваем тесто. Кстати, оно идеально подходит ещё и для пирожков с несладкой начинкой. В итоге тесто должно получится мягкое, эластичное, гладкое и не липнущее к рукам. Положите шарик теста в миску, накройте полотенцем и поставьте в тёплое место на подъём. Я ставлю в электрическую духовку, включённую на 40 градусов, дверцу закрываю. Тесто подходит таким образом в разы быстрее, а значит оно не перестаивает и не имеет ярко-выраженного запаха дрожжей.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/9.jpg" class="et1">
+            <img src="/img/hachapuri/9.jpg" class="et1">
             <p>А пока сделаем начинку. Для хачапури по-аджарски берём 2 вида сыра — сулугуни, он плотный и нежный, а также адыгейский сыр, по своей структуре чем-то похож на творог. Сулугуни натрите на крупной тёрке, пересыпьте в миску, а адыгейский сыр разрываем руками на маленькие кусочки.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/10.jpg" class="et1">
+            <img src="/img/hachapuri/10.jpg" class="et1">
             <p>Перемешайте сыры и влейте к ним сливки. Я использую жирные сливки от 30%, но можно брать даже молоко, единственное его сначала добавьте 50 мл., посмотрите на консистенцию сырной массы, а затем если необходимо влейте ещё.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/11.jpg" class="et1">
+            <img src="/img/hachapuri/11.jpg" class="et1">
             <p>Возвращаемся к тесту, у меня оно подходило 50 минут.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/12.jpg" class="et1">
+            <img src="/img/hachapuri/12.jpg" class="et1">
             <p>Подошедшее тесто необходимо обмять.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/13.jpg" class="et1">
+            <img src="/img/hachapuri/13.jpg" class="et1">
             <p>Разделите тесто на 3-6 равных частей. Получится или 3 больших хачапури или можно сделать хачапури маленькие. Здесь уже всё зависит от вас. Итак, каждый кусочек теста округляем, накрываем пакетом и даём постоять 10 минут.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/14.jpg" class="et1">
+            <img src="/img/hachapuri/14.jpg" class="et1">
             <p>Начинку разделите на равные части, я использую весы. Раскатайте каждый кусочек теста в овал.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/15.jpg" class="et1">
+            <img src="/img/hachapuri/15.jpg" class="et1">
             <p>Выложите сырную начинку для бортиков.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/16.jpg" class="et1">
+            <img src="/img/hachapuri/16.jpg" class="et1">
             <p>Аккуратно защипните их. Далее защипываем края, делая форму лодочки. Края защипываем хорошо, чтобы во время выпечки они не расползлись. Аналогично сформируйте остальные хачапури.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/17.jpg" class="et1">
+            <img src="/img/hachapuri/17.jpg" class="et1">
             <p>Переложите заготовки на противень, застеленный пергаментом для выпечки. Я буду выпекать в два захода.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/18.jpg" class="et1">
+            <img src="/img/hachapuri/18.jpg" class="et1">
             <p>В центр каждой лодочки выложите оставшуюся начинку. Хачапури выпекаем в заранее разогретой до 200 градусов духовке 15-20 минут. Духовку разогреваем вместе с маленькой металлической формой. После того, как духовка прогрелась, в форму наливаем стакан кипятка и ставим хачапури.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/19.jpg" class="et1">
+            <img src="/img/hachapuri/19.jpg" class="et1">
             <p>Выпекайте 15-20 минут с паром.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/20.jpg" class="et1">
+            <img src="/img/hachapuri/20.jpg" class="et1">
             <p>Тем временем отделите белки от желтков, нам понадобятся только желтки. Вкуснейшие хачапури практически готовы. В центре каждой лодочки сделайте небольшое углубление при помощи вилки и вылейте туда желток. Возвращаем хачапури в духовку ещё на 2 минуты.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/21.jpg" class="et1">
+            <img src="/img/hachapuri/21.jpg" class="et1">
             <p>Всё, хачапури по-аджарски настоящий готов, подаём их сразу, горячими, с пылу с жару. Обязательно добавьте 1-2 кусочка сливочного масла. Оно быстро тает и отдаёт весь свой вкус хачапури.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/hachapuri/22.jpg" class="et1">
+            <img src="/img/hachapuri/22.jpg" class="et1">
             <p>Приятного аппетита!</p>
         </div>
         </div>

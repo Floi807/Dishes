@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Шоколадный торт с кремом из вареной сгущенки</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="512x512" href="/img/main/logo1-favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                background-image: url(/img/main/background.avif);
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #000000;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #000000a4;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #000000;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #000000a4;
+    }
+
+    h2{
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    h5{
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        height: 600px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 30px 10px;
+        background-image:url(/img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+        padding: 0 20px
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+justify-self: start;
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fae9d7c4;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+    .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Шоколадный торт с кремом из вареной сгущенки</h1>
+        </div>
+
+        <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/shokoladnii_tort_s_kremom_iz_varenoi_sgushenki.jpg" class="bn" alt="Шоколадный торт с кремом из вареной сгущенки">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Чтобы шоколадный торт получился пропитанным и сочным, вам необходимо дать ему "отдохнуть" в холодильнике не менее 3-4 часов, а лучше — 6-8 часов (ночь). Если нет возможности приготовить торт заранее, то пропитывайте каждый корж при сборке десерта сиропом или топпингом. Украшайте торт по своему вкусу: печеньем, ягодами, фруктами и т.д</h4>
+    
+        <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
+            <div class="row">
+                <span>Яйцо куриное<br><small>(бисквит)</small></span>
+                <span>4 штуки</span>
+            </div>
+            <div class="row">
+                <span>Сахар<br><small>(бисквит)</small></span>
+                <span>150 грамм</span>
+            </div>
+            <div class="row">
+                <span>Мука пшеничная<br><small>(бисквит)</small></span>
+                <span>130 грамм</span>
+            </div>
+            <div class="row">
+                <span>Соль<br><small>(бисквит)</small></span>
+                <span>2 щепотки</span>
+            </div>
+            <div class="row">
+                <span>Какао порошок<br><small>(бисквит)</small></span>
+                <span>2 ст.ложки</span>
+            </div>
+            <div class="row">
+                <span>Вареная сгущенка<br><small>(крем)</small></span>
+                <span>400 грамм</span>
+            </div>
+            <div class="row">
+                <span>Масло сливочное<br><small>(крем)</small></span>
+                <span>200 грамм</span>
+            </div>
+            <div class="row">
+                <span>Печенье шоколадное<br><small>(для присыпки)</small></span>
+                <span>100 грамм</span>
+            </div>
+            <h2>Количество порций: 6</h2>
+        </div>
+
+        <h2 class="cr">Как приготовить "Шоколадный торт с кремом из вареной сгущенки"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/1.jpg" class="et1">
+        <p>Подготовьте указанные продукты. Печенье можно выбрать по своему вкусу или использовать крошку бисквита для присыпки боков торта.</p>
+        </div>
+        <div class="et">
+        <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/2.jpg" class="et1">
+        <p>Вбейте куриные яйца в чашу кухонного комбайна или миксера. Всыпьте сахарный песок и соль, взбейте примерно 3-4 минуты на высокой скорости техники в пышную пену.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/3.jpg" class="et1">
+            <p>Добавьте какао-порошок и пшеничную муку по частям, вмешивая их в массу, но не взбивая. От насыщенности цвета какао и будет зависеть цвет испеченного бисквита.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/4.jpg" class="et1">
+            <p>Сбрызните форму растительным маслом и выложите в нее приготовленное тесто. Слегка разровняйте поверхность. Разогрейте духовку до 180 градусов и отправьте форму на средний ярус техники.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/5.jpg" class="et1">
+            <p>Испеките примерно 25-30 минут до сухой шпажки, выходящей из середины бисквита. Извлеките форму из духовки и переверните на бок, чтобы выпечка остыла.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/6.jpg" class="et1">
+            <p>Когда бисквит полностью остынет, разрежьте его на три коржа по горизонтали.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/7.jpg" class="et1">
+            <p>В чашу кухонного комбайна выложите сливочное масло и вареную сгущенку. Сахар или сахарную пудру добавлять не нужно — крем и так получится очень сладким.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/8.jpg" class="et1">
+            <p>Взбейте все примерно 2-3 минуты, но не дольше, чтобы не перевзбить масло.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/9.jpg" class="et1">
+            <p>Выложите нижний корж на тарелку и обмажьте его кремом.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/10.jpg" class="et1">
+            <p>Накройте вторым коржом и снова обмажьте кремом. Накройте верхним коржом и обмажьте кремом весь торт. Отправьте его в холодильник минимум на 3-4 часа, а лучше — на ночь!</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/11.jpg" class="et1">
+            <p>Когда торт отлично пропитается, украсьте его крошкой шоколадного печенья, присыпав ее по краям десерта. Можно украсить по своему вкусу.</p>
+        </div>
+        <div class="et">
+            <img src="/img/shokoladnii_tort_iz_varenoi_sgushenki/12.jpg" class="et1">
+            <p>Нарежьте шоколадный торт с вареной сгущенкой на порционные кусочки и подайте к столу с напитками. Приятного вам аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>

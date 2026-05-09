@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Кулич</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="512x512" href="/img/main/logo1-favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                background-image: url(/img/main/background.avif);
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #000000;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #000000a4;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #000000;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #000000a4;
+    }
+
+    h2{
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    h5{
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 30px 10px;
+        background-image:url(/img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+        padding: 0 20px
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+justify-self: start;
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fae9d7c4;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+
+
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+        .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Кулич в аэрогриле</h1>
+        </div>
+
+        <img src="/img/kulich_v_aerogrile/kulich_v_aerogrile.jpg" class="bn" alt="Кулич в аэрогриле">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Вкусный и нежный кулич можно приготовить своими руками и даже — в аэрогриле. Куличи получаются с приятным пушистым мякишем, полностью пропечёнными и превосходными на вкус. В качестве начинки у меня изюм и цукаты, но можно добавлять орехи, любые сухофрукты, вяленую вишню, клюкву и т.д. Прекрасный вариант для праздничного пасхального стола!</h4>
+    
+
+        <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
+            <div class="row">
+                <span>Молоко<br></span>
+                <span>150 мл</span>
+            </div>
+            <div class="row">
+                <span>Мука<br></span>
+                <span>300 грамм</span>
+            </div>
+            <div class="row">
+                <span>Дрожжи сухие<br></span>
+                <span>7 грамм</span>
+            </div>
+            <div class="row">
+                <span>Сахар<br></span>
+                <span>110 грамм</span>
+            </div>
+            <div class="row">
+                <span>Ванилин<br></span>
+                <span>1 щепотка</span>
+            </div>
+            <div class="row">
+                <span>Соль<br></span>
+                <span>1 щепотка</span>
+            </div>
+            <div class="row">
+                <span>Желтки<br></span>
+                <span>3 штуки</span>
+            </div>
+            <div class="row">
+                <span>Сливочное масло<br><small>(мягкое)</small></span>
+                <span>100 грамм</span>
+            </div>
+            <div class="row">
+                <span>Апельсин<br><small>(цедра)</small></span>
+                <span>1 штука</span>
+            </div>
+            <div class="row">
+                <span>Наполнитель<br><small>(изюм,цукаты или любые сухофрукты)</small></span>
+                <span>100 грамм</span>
+            </div>
+            <h2>Количество порций: 3</h2>
+        </div>
+        
+        <h2 class="cr">Как приготовить "Кулич в аэрогриле"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="/img/kulich_v_aerogrile/1.jpg" class="et1">
+        <p>Подготовьте все ингредиенты по списку. Сливочное масло достаньте заранее и дайте полежать при комнатной температуре, чтобы оно стало мягким.</p>
+        </div>
+        <div class="et">
+        <img src="/img/kulich_v_aerogrile/2.jpg" class="et1">
+        <p>Смешайте дрожжи, тёплое, но не горячее молоко, 3 ст.л. муки из общего количества и 1 ст.л. сахара из общего количества. Перемешайте до однородности, накройте пленкой или полотенцем и оставьте в теплом месте на 20-30 минут.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/3.jpg" class="et1">
+            <p>В это время соедините желтки и мягкое сливочное масло.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/4.jpg" class="et1">
+            <p>Добавьте сахар, ванилин, соль и цедру апельсина.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/5.jpg" class="et1">
+            <p>Взбейте либо миксером, либо ручным венчиком до состояния пышного крема.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/6.jpg" class="et1">
+            <p>Спустя 20 минут дрожжевая смесь будет выглядеть так: появилась пенная шапочка и вот вот начнёт оседать.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/7.jpg" class="et1">
+            <p>Соедините дрожжевую и масляно-яичную смеси. Перемешайте до однородности.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/8.jpg" class="et1">
+            <p>Введите муку. Перемешайте до однородности.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/9.jpg" class="et1">
+            <p>Вот так будет выглядеть тесто.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/10.jpg" class="et1">
+            <p>Накройте миску плёнкой и уберите в тёплое место на 1,5-2 часа.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/11.jpg" class="et1">
+            <p>В подошедшее тесто добавьте промытый и обсушенный изюм и цукаты. Изюм можно предварительно обвалять в муке (хватит буквально 1 ч.л. муки).</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/12.jpg" class="et1">
+            <p>Перемешайте ложкой или лопаткой.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/13.jpg" class="et1">
+            <p>Выложите тесто в формы. У меня обычные формочки для куличей среднего размера, предварительно я их смазала растительным маслом. Поставьте формочки с тестом в чашу аэрогриля, установите температуру 60 градусов и время 25 минут (оставим тесто для расстойки).</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/14.jpg" class="et1">
+            <p>Затем увеличьте температуру до 150 градусов и установите время 30 минут. После звукового сигнала, откройте и при помощи деревянной шпажки проверьте на готовность. Если необходимо подрумянить верх, готовьте при 180 градусах ещё 5-7 минут.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/15.jpg" class="et1">
+            <p>Куличи в аэрогриле готовы. Выложите их на бочок и периодически переворачивая оставьте до остывания.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kulich_v_aerogrile/16.jpg" class="et1">
+            <p>Остывшие куличи украсьте на свой вкус.</p>
+        </div>
+        <div class="et2">
+            <img src="/img/kulich_v_aerogrile/17.jpg" class="et1">
+            <p>А вот так они выглядят в разрезе. Одни из лучших куличей, что приходилось готовить.<br> Непременно попробуйте. Приятного аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>

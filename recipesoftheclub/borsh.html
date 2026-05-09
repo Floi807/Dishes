@@ -3,23 +3,23 @@
     <head>
         <title>Борщ</title>
         <meta charset="UTF-8"/>
-        <link rel="icon" type="image/png" href="/Dishes/img/favicon.png">
+        <link rel="icon" type="image/png" sizes="512x512" href="/img/main/logo1-favicon.png">
         <style>
             body {
                 font-family: Arial, sans-serif;
                 padding: 20px;
                 background: #E0C397;
+                background-image: url(/img/main/background.avif);
                 text-align: center;
             }   
 
             h1 { 
                 color: #e2dddd;
-                border: solid 5px #1B263B;
                 border-radius: 15px;
-                box-shadow: 0 0 10px #1B263B;
+                box-shadow: 0 0 10px #000000;
                 display: inline-block;
                 padding: 10px 100px;
-                background-color: #1B263B;
+                background-color: #000000a4;
             }
 
             .container {
@@ -37,22 +37,19 @@
     h4{
         width: 750px;
         color: #e2dddd;
-        border: solid 5px #1B263B;
         border-radius: 15px;
-        box-shadow: 0 0 10px #1B263B;
+        box-shadow: 0 0 10px #000000;
         display: inline-block;
         padding: 10px 100px;
-        background-color: #1B263B;
+        background-color: #000000a4;
     }
 
     h2{
-        margin-left: 50px;
-        margin-top: 50px;
+        margin-left: 60px;
         text-align: left;
     }
 
     h5{
-
         text-align: left;
         border: solid 5px #1B263B;
         border-radius: 10px;
@@ -60,16 +57,26 @@
     }
 
     .he5{
-        width: 353px;
-        border: solid 5px #1B263B;
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        height: 590px;
+        border: solid 5px #000000;
         border-radius: 10px;
-        padding: 10px;
+        padding: 35px 10px;
+        background-image:url(/img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
     }
+
     .row{
         display: grid;
         margin-bottom: 10px;
         align-items: start;
         grid-template-columns: 1fr auto;
+        padding: 0 20px
     }
 /* пунктир между */
 .row::after {
@@ -80,7 +87,7 @@
 }
 
 .row span:first-child {
-  min-width: 0; /* важно для переноса */
+justify-self: start;
 }
 
 .row span:last-child {
@@ -105,7 +112,7 @@
   align-items: center;
   border: 1px solid black;
   border-radius: 10px;
-  background-color: #bbbbbb6d;
+  background-color: #fae9d7c4;
   padding: 10px;
   counter-increment: step; /* увеличиваем счётчик */
 }
@@ -133,6 +140,30 @@
         
     }
 
+        .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
         </style>
     </head>
     <body>
@@ -140,13 +171,14 @@
             <h1>Самый вкусный борщ</h1>
         </div>
 
-        <img src="/Dishes/img/borsh/borsh.png" class="bn" alt="Борщ">
+        <img src="/img/borsh/borsh.png" class="bn" alt="Борщ">
         <br>
         <h1>Описание приготовления:</h1>
         <h4>Это блюдо — изюминка украинской кухни, которую знают, наверное, во всем мире. Несмотря на убеждение о том, что у каждой хозяйки свой неповторимый борщ, я хочу поделиться с вами вариантом, который наверняка станет вашим любимым. Сам процесс нельзя назвать сложным, так что даже молодые и неопытные кулинары могут смело попробовать свои силы. Запоминайте рецепт как приготовить классический борщ на мясном бульоне!</h4>
     
-        <h2>Состав / Ингредиенты:</h2>
+
         <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
             <div class="row">
                 <span>Лавровый лист<br></span>
                 <span>0.67 штука</span>
@@ -195,40 +227,41 @@
                 <span>Вода<br></span>
                 <span>2-2.67 литров</span>
             </div>
+            <h2>Количество порций: 4</h2>
         </div>
-        <h2>Количество порций: 4</h2>
+        
         <h2 class="cr">Как приготовить "Борщ"</h2><br>
         <div class="container1">
         <div class="et">
-        <img src="/Dishes/img/borsh/1.jpg" class="et1">
+        <img src="/img/borsh/1.jpg" class="et1">
         <p>Вот необходимый нам набор ингредиентов чтобы приготовить классический борщ на мясном бульоне.</p>
         </div>
         <div class="et">
-        <img src="/Dishes/img/borsh/2.jpg" class="et1">
+        <img src="/img/borsh/2.jpg" class="et1">
         <p>Для начала необходимо сварить мясной бульон. Мясо вымойте, выложите в кастрюлю и залейте водой. Добавьте лавровый лист. После закипания уберите огонь до минимума и варите до мягкости мяса (время зависит от того, какое именно мясо вы выбрали). Аккуратно достаньте его из бульона после готовности.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/borsh/3.jpg" class="et1">
+            <img src="/img/borsh/3.jpg" class="et1">
             <p>Бульон при желании процедите. Подсолите по вкусу и выложите нарезанный кубиками картофель. Варите около 10-12 минут.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/borsh/4.jpg" class="et1">
+            <img src="/img/borsh/4.jpg" class="et1">
             <p>Лук с морковью очистите, измельчите и обжарьте на сковороде с небольшим количеством растительного масла.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/borsh/5.jpg" class="et1">
+            <img src="/img/borsh/5.jpg" class="et1">
             <p>В кастрюлю с бульоном выложите обжаренные овощи и мелко нашинкованную капусту.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/borsh/6.jpg" class="et1">
+            <img src="/img/borsh/6.jpg" class="et1">
             <p>На сковороду тем временем налейте еще немного масла и выложите тертую свеклу. Обжарьте пару минут и добавьте уксус. Тушите еще минут 5, а после выложите томатную пасту. Томите на медленном огне еще 5-7 минут.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/borsh/7.jpg" class="et1">
+            <img src="/img/borsh/7.jpg" class="et1">
             <p>В бульон выложите мясо, предварительно нарезав его порционными кусочками, и свеклу.</p>
         </div>
         <div class="et">
-            <img src="/Dishes/img/borsh/8.jpg" class="et1">
+            <img src="/img/borsh/8.jpg" class="et1">
             <p>По вкусу добавьте соль, перец, сахар и чеснок. Варите еще минут 7-10 до готовности картофеля. После снимите с огня, накройте крышкой и оставьте на полчасика настояться. Перед подачей можно добавить зелень и сметану. Борщ готов! Приятного аппетита!</p>
         </div>
         </div>

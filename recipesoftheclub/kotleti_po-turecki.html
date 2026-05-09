@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Котлеты по-турецки</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="512x512" href="/img/main/logo1-favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                background-image: url(/img/main/background.avif);
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #000000;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #000000a4;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #000000;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #000000a4;
+    }
+
+    h2{
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    h5{
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        height: 660px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 40px 10px;
+        background-image:url(/img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+        padding: 0 20px
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+justify-self: start;
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fae9d7c4;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+
+
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+        .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Котлеты по-турецки</h1>
+        </div>
+
+        <img src="/img/kotleti_po-turecki/kotleti_po-turecki.jpg" class="bn" alt="Котлеты по-турецки">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Красочную турецкую кухню невозможно представить без мясных блюд. Попробуйте и вы котлеты по-турецки — их аромат и вкус просто непередаваем! Они отлично сочетаются с чечевицей, картофелем, салатом из свежих овощей и различными соусами.</h4>
+    
+
+        <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
+            <div class="row">
+                <span>Говядина<br></span>
+                <span>1200 грамм</span>
+            </div>
+            <div class="row">
+                <span>Лук<br><small>(средний)</small></span>
+                <span>2 штуки</span>
+            </div>
+            <div class="row">
+                <span>Чеснок<br><small>(мелких)</small></span>
+                <span>4 штуки</span>
+            </div>
+            <div class="row">
+                <span>Яйцо<br></span>
+                <span>2 штуки</span>
+            </div>
+            <div class="row">
+                <span>Хлеб<br><small>(ржаной)</small></span>
+                <span>2 ломтика</span>
+            </div>
+            <div class="row">
+                <span>Вода<br></span>
+                <span>100 мл</span>
+            </div>
+            <div class="row">
+                <span>Паприка молотая<br></span>
+                <span>8 щепоток</span>
+            </div>
+            <div class="row">
+                <span>Зира<br></span>
+                <span>4 щепотки</span>
+            </div>
+            <div class="row">
+                <span>Приправа универсальная<br></span>
+                <span>2 ч.ложки</span>
+            </div>
+            <div class="row">
+                <span>Кориандр молотый<br></span>
+                <span>4 щепотки</span>
+            </div>
+            <div class="row">
+                <span>Петрушка<br><small>(стебля)</small></span>
+                <span>8 штук</span>
+            </div>
+            <div class="row">
+                <span>Масло растительное<br></span>
+                <span>80 мл</span>
+            </div>
+            <h2>Количество порций: 8</h2>
+        </div>
+        
+        <h2 class="cr">Как приготовить "Котлеты по-турецки"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="/img/kotleti_po-turecki/1.jpg" class="et1">
+        <p>Подготовьте указанные продукты. Приобретите говяжью мякоть с небольшим жирком. Очистите лук и чесночные зубчики от шелухи, промойте в воде.</p>
+        </div>
+        <div class="et">
+        <img src="/img/kotleti_po-turecki/2.jpg" class="et1">
+        <p>Разломите ломтик ржаного хлеба на части и залейте его водой. Можно залить и молоком. Также сочность фаршу можно придать с помощью добавления свиного сала.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kotleti_po-turecki/3.jpg" class="et1">
+            <p>Промойте мясо в воде и срежьте жилы и пленки. Нарежьте небольшими кубиками вместе с луком и прокрутите через мясорубку, добавив чеснок и отжатый от воды хлеб.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kotleti_po-turecki/4.jpg" class="et1">
+            <p>Всыпьте все заявленные специи и пряности, вбейте куриное яйцо и тщательно вымешайте фарш.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kotleti_po-turecki/5.jpg" class="et1">
+            <p>Промойте и измельчите петрушку, мелко нарежьте и добавьте в фарш. Тщательно перемешайте и отбейте фарш, вкидывая его обратно в миску.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kotleti_po-turecki/6.jpg" class="et1">
+            <p>Смочите руки в воде и разделите фарш на равные части. Сформируйте в руках заготовки котлет, округляя их. Котлеты по-турецки должны быть продолговатой формы.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kotleti_po-turecki/7.jpg" class="et1">
+            <p>Прогрейте на сковороде растительное масло и обжарьте котлеты в течение 3-4 минут с каждой стороны. Затем накройте емкость крышкой, убавьте нагрев и пропарьте котлеты еще 3-5 минут.</p>
+        </div>
+        <div class="et">
+            <img src="/img/kotleti_po-turecki/8.jpg" class="et1">
+            <p>Выложите котлеты на тарелку, добавляя любой гарнир по вашему вкусу. Приятного вам аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>
