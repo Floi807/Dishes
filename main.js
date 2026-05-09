@@ -28,25 +28,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-// Название книги → HTML страница книги
+// Название блюда → HTML страница блюда
 document.addEventListener("DOMContentLoaded", () => {
+
     const dishes = {
-        "борщ": "/Dishes/recipesoftheclub/borsh.html",
-        "панакота с агар агаром": "/Dishes/recipesoftheclub/panakota.html",
-        "рассыпчатый плов с говядиной": "/Dishes/recipesoftheclub/plov.html",
-        "суп суюк ош": "/Dishes/recipesoftheclub/suk osh.html",
-        "хачапури по-аджарски": "/Dishes/recipesoftheclub/hachapuri.html"
+        "борщ": "/recipesoftheclub/borsh.html",
+        "панакота с агар агаром": "/recipesoftheclub/panakota.html",
+        "рассыпчатый плов с говядиной": "/recipesoftheclub/plov.html",
+        "суп суюк ош": "/recipesoftheclub/suk osh.html",
+        "хачапури по-аджарски": "/recipesoftheclub/hachapuri.html",
+        "шаурма в аэрогриле": "/recipesoftheclub/shaurma.html",
+        "кулич в аэрогриле": "/recipesoftheclub/kulich.html",
+        "эчпочмак без дрожжей": "/recipesoftheclub/echpochmak.html",
+        "драники в аэрогриле": "/recipesoftheclub/draniki.html",
+        "манная каша на молоке и воде": "/recipesoftheclub/mannaya_kasha.html",
+        "пшеничный ролл": "/recipesoftheclub/pshenichnii_roll.html",
+        "тортилья с ветчиной и сыром": "/recipesoftheclub/tortilya_s_vetchinoi_i_sirom.html",
+        "салат старый Новый год": "/recipesoftheclub/salat_quotstarii_novii_godquot.html",
+        "салат с тунцом, огурцами и кукурузой": "/recipesoftheclub/salat_s_tuncom_ogurcami_i_kukuruzoi.html",
+        "котлеты по-турецки": "/recipesoftheclub/kotleti_po-turecki.html",
+        "оладьи с сыром и колбасой": "/recipesoftheclub/oladi_s_sirom_i_kolbasoi.html",
     };
 
+    const input = document.getElementById("searchInput");
+    const suggestions = document.getElementById("suggestions");
     const form = document.getElementById("searchForm");
 
-    form.addEventListener("submit", function(event) {
-        event.preventDefault();
+    const keys = Object.keys(dishes);
 
-        const name = this.dish.value.trim().toLowerCase();
+    // 🔍 Поиск при вводе
+    input.addEventListener("input", () => {
+        const value = input.value.toLowerCase().trim();
+        suggestions.innerHTML = "";
 
-        if (dishes[name]) {
-            window.location.href = dishes[name];
+        if (!value) return;
+
+        const results = keys.filter(dish => 
+            dish.includes(value)
+        );
+
+        results.forEach(dish => {
+            const div = document.createElement("div");
+            div.textContent = dish;
+
+            div.addEventListener("click", () => {
+                window.location.href = dishes[dish];
+            });
+
+            suggestions.appendChild(div);
+        });
+    });
+
+    // 🚀 Поиск при Enter
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const value = input.value.toLowerCase().trim();
+
+        const found = keys.find(dish => dish.includes(value));
+
+        if (found) {
+            window.location.href = dishes[found];
         } else {
             alert("Блюдо не найдено");
         }
