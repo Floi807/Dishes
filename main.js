@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     const dishes = {
-        "борщ": "/recipesoftheclub/borsh.html",
+        "борщ": "/Dishes/recipesoftheclub/borsh.html",
         "панакота с агар агаром": "recipesoftheclub/panakota.html",
         "рассыпчатый плов с говядиной": "recipesoftheclub/plov.html",
         "суп суюк ош": "recipesoftheclub/suk osh.html",
