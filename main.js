@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     const dishes = {
-        "борщ": "/Dishes/recipesoftheclub/borsh.html",
-        "панакота с агар агаром": "/Dishes/recipesoftheclub/panakota.html",
+        "борщ": "../recipesoftheclub/borsh.html",
+        "панакота с агар агаром": "/recipesoftheclub/panakota.html",
         "рассыпчатый плов с говядиной": "/Dishes/recipesoftheclub/plov.html",
         "суп суюк ош": "/Dishes/recipesoftheclub/suk osh.html",
         "хачапури по-аджарски": "/Dishes/recipesoftheclub/hachapuri.html",
@@ -50,6 +50,9 @@ document.addEventListener("DOMContentLoaded", () => {
         "люля-кебаб на сковороде": "/Dishes/recipesoftheclub/liulya-kebab_na_skovorode.html",
         "шоколадный торт с кремом из вареной сгущенки": "/Dishes/recipesoftheclub/shokoladnii_tort_iz_varenoi_sgushenki.html",
         "оладьи с сыром и колбасой": "/Dishes/recipesoftheclub/oladi_s_sirom_i_kolbasoi.html",
+        "роллы темпура": "/Dishes/recipesoftheclub/rolli_tempura.html",
+        "куриные наггетсы": "/Dishes/recipesoftheclub/kurinie_naggetsi.html",
+        "корейские жаренные пельмени": "/Dishes/recipesoftheclub/koreiskie_pelmeni_jarenie.html",
     };
 
     const input = document.getElementById("searchInput");

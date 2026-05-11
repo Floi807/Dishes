@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Куриные наггетсы</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="512x512" href="../img/main/logo1-favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                background-image: url(../img/main/background.avif);
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #000000;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #000000a4;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #000000;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #000000a4;
+    }
+
+    h2{
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    h5{
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        height: 330px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 0px 10px;
+        background-image:url(../img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+        padding: 0 20px
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+justify-self: start;
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fae9d7c4;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+    .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Куриные наггетсы</h1>
+        </div>
+
+        <img src="../img/kurinie_naggetsi/kurinie_naggetsi.jpg" class="bn" alt="Куриные наггетсы">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Вкусные, нежные и сочные - это домашний Макдоналдс – куриные наггетсы по классическому рецепту. Минимум усилий и на вашем столе уже за полчаса будет готова потрясающая закуска. Некоторые любители компаний готовят такие наггетсы к пиву, добавляя в панировку больше приправ и соли.</h4>
+    
+        <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
+            <div class="row">
+                <span>Куриное филе<br></span>
+                <span>500 грамм</span>
+            </div>
+            <div class="row">
+                <span>Сыр<br></span>
+                <span>200 грамм</span>
+            </div>
+            <div class="row">
+                <span>Яйцо<br></span>
+                <span>2 штуки</span>
+            </div>
+            <div class="row">
+                <span>Мука<br></span>
+                <span>100 грамм</span>
+            </div>
+            <div class="row">
+                <span>Соль и приправы<br></span>
+                <span>По вкусу</span>
+            </div>
+            <div class="row">
+                <span>Растительное масло<br></span>
+                <span>100 грамм</span>
+            </div>
+            <h2>Количество порций: 10</h2>
+        </div>
+
+        <h2 class="cr">Как приготовить "Куриные наггетсы"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="../img/kurinie_naggetsi/1.jpg" class="et1">
+        <p>Минимум ингредиентов и усилий и вы сможете наслаждаться куриными наггетсами как в во всемирно известном ресторане быстрого питания. Для приготовления нам понадобится куриное филе.</p>
+        </div>
+        <div class="et">
+        <img src="../img/kurinie_naggetsi/2.jpg" class="et1">
+        <p>Натираем сыр на мелкой терке в отдельную посуду. В другой емкости разбиваем куриные яйца, солим и приправляем их, после чего хорошенько разбалтываем вилкой.</p>
+        </div>
+        <div class="et">
+            <img src="../img/kurinie_naggetsi/3.jpg" class="et1">
+            <p>Теперь остается дело за малым: нарезаем куриное филе полосками средней ширины и длины, обваливаем их в муке, а затем в яйце.</p>
+        </div>
+        <div class="et">
+            <img src="../img/kurinie_naggetsi/4.jpg" class="et1">
+            <p>И в завершении - обмакиваем наггетсы в сырной крошке.</p>
+        </div>
+        <div class="et">
+            <img src="../img/kurinie_naggetsi/5.jpg" class="et1">
+            <p>Отправляем филе жарится на растительном масле, на среднем огне. Обжариваем с двух сторон до золотистой корочки и промакиваем бумажным полотенцем.</p>
+        </div>
+        <div class="et">
+            <img src="../img/kurinie_naggetsi/6.jpg" class="et1">
+            <p>Вот такими они получаются в готовом виде. Приготовьте дополнительно к наггетсам сырный, томатный или майонезный соус.</p>
+        </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Корейские жаренные пельмени</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="512x512" href="../img/main/logo1-favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                background-image: url(../img/main/background.avif);
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #000000;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #000000a4;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #000000;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #000000a4;
+    }
+
+    h2{
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    h5{
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        height: 330px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 0px 10px;
+        background-image:url(../img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+        padding: 0 20px
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+justify-self: start;
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fae9d7c4;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+    .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Корейские жаренные пельмени</h1>
+        </div>
+
+        <img src="../img/koreiskie_pelmeni_jarenie/koreiskie_pelmeni_jarenie.jpg" class="bn" alt="Корейские жаренные пельмени">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Недавно я узнала, как приготовить пельмени-вареники, и это блюдо уже стало одним из любимейших в моей семье! Готовится оно не сложнее обычных пельменей или вареников, но получается намного сочнее и вкуснее благодаря начинке. Вы можете брать любой фарш, но я предпочитаю именно говяжий, так как он дает сок во время парки. Особенность этого блюда в том, что оно не варится, а поджаривается на сковороде, а затем немного пропаривается. Получается великолепно!</h4>
+    
+        <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
+            <div class="row">
+                <span>Мука<br></span>
+                <span>2 кг</span>
+            </div>
+            <div class="row">
+                <span>Водар<br></span>
+                <span>1 литр</span>
+            </div>
+            <div class="row">
+                <span>Фарш<br></span>
+                <span>2 кг</span>
+            </div>
+            <div class="row">
+                <span>Лук<br></span>
+                <span>8-10 штук</span>
+            </div>
+            <div class="row">
+                <span>Сорковь<br></span>
+                <span>4 штуки</span>
+            </div>
+            <div class="row">
+                <span>Зелень<br></span>
+                <span>2 пучка</span>
+            </div>
+            <h2>Количество порций: 8</h2>
+        </div>
+
+        <h2 class="cr">Как приготовить "Корейские жаренные пельмени"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="../img/koreiskie_pelmeni_jarenie/1.png" class="et1">
+        <p>Замесите тесто. На две части муки возьмите одну часть холодной воды. Тесто должно получиться очень тугим. Накройте его миской, дайте отдохнуть 20 минут.</p>
+        </div>
+        <div class="et">
+        <img src="../img/koreiskie_pelmeni_jarenie/2.png" class="et1">
+        <p>Подготовьте ингредиенты для начинки в соотношении 1 к 3. Нарежьте лук, натрите на крупной терке морковь.</p>
+        </div>
+        <div class="et">
+            <img src="../img/koreiskie_pelmeni_jarenie/3.png" class="et1">
+            <p>Смешайте все ингредиенты, посолите, добавьте имбирь и соевый соус.</p>
+        </div>
+        <div class="et">
+            <img src="../img/koreiskie_pelmeni_jarenie/4.png" class="et1">
+            <p>Тесто раскатайте в пласт, выдавите из него кружочки. Раскатайте каждый кружочек, сделайте пельмешки (у меня есть форма, но можно и руками).</p>
+        </div>
+        <div class="et">
+            <img src="../img/koreiskie_pelmeni_jarenie/5.png" class="et1">
+            <p>Разогрейте на сковороде немного подсолнечного масла, обжарьте пельмени с одной стороны. Влейте в сковороду немного холодной воды, накройте крышкой и дайте пельменям немного "попариться".</p>
+        </div>
+        <div class="et">
+            <img src="../img/koreiskie_pelmeni_jarenie/6.png" class="et1">
+            <p>Приятного аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>

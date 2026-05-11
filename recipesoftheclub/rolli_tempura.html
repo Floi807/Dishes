@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Роллы темпура</title>
+        <meta charset="UTF-8"/>
+        <link rel="icon" type="image/png" sizes="512x512" href="../img/main/logo1-favicon.png">
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                padding: 20px;
+                background: #E0C397;
+                background-image: url(../img/main/background.avif);
+                text-align: center;
+            }   
+
+            h1 { 
+                color: #e2dddd;
+                border-radius: 15px;
+                box-shadow: 0 0 10px #000000;
+                display: inline-block;
+                padding: 10px 100px;
+                background-color: #000000a4;
+            }
+
+            .container {
+                text-align: center;
+            }
+
+            .bn {
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      margin: 20px 0;
+    }
+
+    h4{
+        width: 750px;
+        color: #e2dddd;
+        border-radius: 15px;
+        box-shadow: 0 0 10px #000000;
+        display: inline-block;
+        padding: 10px 100px;
+        background-color: #000000a4;
+    }
+
+    h2{
+        margin-left: 60px;
+        text-align: left;
+    }
+
+    h5{
+        text-align: left;
+        border: solid 5px #1B263B;
+        border-radius: 10px;
+
+    }
+
+    .he5{
+        margin-top: 70px;
+        background-color: #959595;
+        width: 390px;
+        height: 650px;
+        border: solid 5px #000000;
+        border-radius: 10px;
+        padding: 40px 10px;
+        background-image:url(../img/main/back-structure.png);
+        background-size: 100% 100%;        /* подгоняет под блок */
+        background-position: center;   /* центрирует */
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+    }
+
+    .row{
+        display: grid;
+        margin-bottom: 10px;
+        align-items: start;
+        grid-template-columns: 1fr auto;
+        padding: 0 20px
+    }
+/* пунктир между */
+.row::after {
+  content: "";
+  grid-column: 1 / -1;
+  border-bottom: 2px dotted #1B263B;
+  margin: 0px 10px;
+}
+
+.row span:first-child {
+justify-self: start;
+}
+
+.row span:last-child {
+  white-space: nowrap;
+  text-align: right;
+}
+
+    .cr{
+        text-align: center;
+    }
+
+.container1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  counter-reset: step; /* обнуляем счётчик */
+}
+
+.et {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #fae9d7c4;
+  padding: 10px;
+  counter-increment: step; /* увеличиваем счётчик */
+}
+
+/* надпись "Шаг X" */
+.et::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+    
+    .et1{
+        float: left;
+        border-radius: 10px;
+        width: 200px;
+        height: 150px;
+        
+    }
+
+    .et2{
+        grid-column: span 2;   /* занимает 2 колонки */
+        justify-self: center;
+        position: relative;
+        display: flex;
+        align-items: center;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: #fae9d7c4;
+        padding: 10px;
+        counter-increment: step; /* увеличиваем счётчик */
+    }
+    .et2::before {
+  content: "Шаг " counter(step);
+  position: absolute;
+  top: -15px;
+  left: 10px;
+  background: #1B263B;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Роллы темпура</h1>
+        </div>
+
+        <img src="../img/rolli_tempura/rolli_tempura.jpg" class="bn" alt="Роллы темпура">
+        <br>
+        <h1>Описание приготовления:</h1>
+        <h4>Роллы темпура — это разновидность суши, их отличие в том, что жарятся они в раскалённом масле и практически за считанные секунды. Для кляра этого достаточно, а прожаривать начинку совершенно не нужно. Мне нравятся больше всего роллы с красной рыбой, огурцом и творожным сыром. Не плохо получается и более бюджетный вариант с плавленым сливочным сыром и крабовыми палочками или курицей. Можно сделать и любую другую начинку, добавив, к примеру, авокадо или креветки. Для панировки предусмотрены специальные хлопья, но можете заменить их на хлебные крошки, кукурузные хлопья или просто пшеничную муку. Кляр готовится из покупной темпурной муки, так же темпурную муку можете приготовить сами или воспользоваться одной из доступных вариаций кляра темпура, рецептов в интернете которого, достаточно много. Аппетитные сочные горячие роллы с приятной хрустящей корочкой не оставят никого равнодушным. Очень вкусно! Непременно попробуйте! Чтобы хватило всем, готовьте несколько рулетов, можно с разными начинками. К столу подавайте в тёплом виде.</h4>
+    
+        <div class="he5">
+            <h2>Состав / Ингредиенты</h2>
+            <div class="row">
+                <span>Рис<br></span>
+                <span>480 грамм</span>
+            </div>
+            <div class="row">
+                <span>Вода<br><small>(для риса)</small></span>
+                <span>780 мл</span>
+            </div>
+            <div class="row">
+                <span>Вода<br><small>(для кляра)</small></span>
+                <span>240 мл</span>
+            </div>
+            <div class="row">
+                <span>Уксус рисовый<br></span>
+                <span>72 мл</span>
+            </div>
+            <div class="row">
+                <span>Сыр творожный<br></span>
+                <span>360 грамм</span>
+            </div>
+            <div class="row">
+                <span>Нори<br></span>
+                <span>3 штук</span>
+            </div>
+            <div class="row">
+                <span>Растительное масло<br></span>
+                <span>600 мл</span>
+            </div>
+            <div class="row">
+                <span>Соль<br><small>(для кляра)</small></span>
+                <span>0,6 ч.ложки</span>
+            </div>
+            <div class="row">
+                <span>Сука темпурная<br></span>
+                <span>180 грамм</span>
+            </div>
+            <div class="row">
+                <span>Панировка<br></span>
+                <span>240 грамм</span>
+            </div>
+            <div class="row">
+                <span>Рыба красная слабосоленая<br></span>
+                <span>300 грамм</span>
+            </div>
+            <div class="row">
+                <span>Огурец<br></span>
+                <span>1 штука</span>
+            </div>
+            <h2>Количество порций: 12</h2>
+        </div>
+
+        <h2 class="cr">Как приготовить "Роллы темпура"</h2><br>
+        <div class="container1">
+        <div class="et">
+        <img src="../img/rolli_tempura/1.jpg" class="et1">
+        <p>Подготовьте все ингредиенты.</p>
+        </div>
+        <div class="et">
+        <img src="../img/rolli_tempura/2.jpg" class="et1">
+        <p>Рис промойте и переложите его в казан или в кастрюлю с толстым дном.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/3.jpg" class="et1">
+            <p>Добавьте воду и после закипания варите под крышкой на небольшом огне 15 минут (в процессе рис не перемешиваем!). Затем снимите с огня и дайте постоять под крышкой ещё 15 минут.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/4.jpg" class="et1">
+            <p>Добавьте рисовый уксус и перемешайте лопаткой.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/5.jpg" class="et1">
+            <p>Подготовьте начинку.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/6.jpg" class="et1">
+            <p>Темпурную муку разведите холодной водой и добавьте соль по вкусу.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/7.jpg" class="et1">
+            <p>Расстелите коврик для формирования роллов. Сверху выложите нори гладкой поверхностью вниз.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/8.jpg" class="et1">
+            <p>Распределите ровным слоем отварной рис, не доходя до одного края около 2 см. На один лист нори понадобится примерно 150 граммов риса.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/9.jpg" class="et1">
+            <p>На рис, ближе к одному краю, выложите начинку: кусочки рыбы, огурец, нарезанный длинной соломкой и творожный сыр.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/10.jpg" class="et1">
+            <p>Аккуратно скрутите ролл при помощи коврика. Добавьте по краям немного риса, чтобы начинка не выглядывала.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/11.jpg" class="et1">
+            <p>Разрежьте каждый ролл пополам, затем окуните сначала в кляр, начиная с концов, а затем обваляйте в панировке.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/12.jpg" class="et1">
+            <p>Таким образом подготовьте все роллы.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/13.jpg" class="et1">
+            <p>Обжарьте роллы во фритюре со всех сторон, а затем выложите на бумажные салфетки. Разрежьте на кусочки и сразу же подавайте к столу.</p>
+        </div>
+        <div class="et">
+            <img src="../img/rolli_tempura/14.jpg" class="et1">
+            <p>Роллы темпура готовы. Приятного аппетита!</p>
+        </div>
+        </div>
+    </body>
+</html>

@@ -171,25 +171,7 @@ h1 {
     grid-template-columns: repeat(3, 483px);
     gap: 10px;
     align-items: flex-start;
-    
-}
-@media (max-width: 1200px){
-    .dishes-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 1024px){
-    .dishes-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 768px){
-    .dishes-container{
-        grid-template-columns: 1fr;
-    }
-}
+}                       
 
 .map-block {
   background-color: #ffffffc9;
@@ -310,3 +292,61 @@ html {
 
 }
 
+
+@media (max-width: 1024px) {
+
+    .dishes-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .vs {
+        min-height: auto;
+    }
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .dishes-container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .vs {
+        padding: 10px;
+    }
+
+    .search-container {
+        width: calc(100% - 20px);
+    }
+
+    .map-block iframe {
+        height: 250px;
+    }
+
+    .site-footer p {
+        display: block;
+        padding: 10px 0;
+    }
+}
+
+/* Очень маленькие телефоны */
+@media (max-width: 480px) {
+
+    .menu button {
+        width: 100%;
+    }
+
+    .titl {
+        width: auto;
+        text-align: center;
+    }
+
+    .br {
+        max-width: 100%;
+    }
+}
