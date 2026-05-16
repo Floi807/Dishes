@@ -350,3 +350,482 @@ html {
         max-width: 100%;
     }
 }
+/* Responsive refinements: keeps the desktop composition, prevents overflow on smaller screens. */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.menu {
+  position: relative;
+}
+
+.title {
+  max-width: 980px;
+  padding: 10px 16px;
+  line-height: 1.2;
+}
+
+.dishes-container {
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(0, 30em));
+  width: min(100%, 1480px);
+  margin: 0 auto;
+  padding: 0 12px;
+}
+
+.vs {
+  max-width: 100%;
+}
+
+.vs p {
+  overflow-wrap: anywhere;
+}
+
+.map-block {
+  width: min(550px, calc(100% - 32px));
+  max-height: none;
+  box-sizing: border-box;
+}
+
+.site-footer {
+  min-width: 0;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .favicon {
+    position: static;
+    display: block;
+    width: 240px;
+    height: auto;
+    margin: -30px auto 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dishes-container {
+    grid-template-columns: repeat(2, minmax(0, 30em));
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    padding: 14px 12px;
+  }
+
+  .title {
+    width: 100%;
+    margin: 0;
+  }
+
+  .menu > div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .dishes-container {
+    grid-template-columns: minmax(0, 30em);
+    gap: 14px;
+  }
+
+  .vs {
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    padding: 10px;
+  }
+
+  .br {
+    padding: 10px 0;
+  }
+
+  .time,
+  .hp {
+    text-align: center;
+  }
+
+  .time1 {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .map-block {
+    padding: 16px 12px;
+  }
+
+  .map-block p {
+    display: block;
+    padding: 6px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .git,
+  .adres,
+  .phone1 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  body,
+  .container,
+  article,
+  .page,
+  .page.active,
+  .menu,
+  .site-footer {
+    width: 100%;
+    max-width: 100vw;
+  }
+
+  .menu {
+    overflow: hidden;
+  }
+
+  .title,
+  .search-container,
+  .dishes-container,
+  .map-block {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+  }
+
+  .title {
+    flex: 0 1 calc(100vw - 24px);
+    min-width: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 12px;
+    font-size: 1.05rem;
+    line-height: 1.25;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .menu > div:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu > div:last-child > button,
+  .menu > div:last-child > a {
+    width: min(100%, 260px);
+  }
+
+  .menu > div:last-child button,
+  .search-box,
+  .vs {
+    width: 100%;
+  }
+
+  .search-container,
+  .dishes-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .vs {
+    max-width: 100%;
+    border-width: 4px;
+  }
+}
+/* Header, cards, and contact polish. */
+.menu {
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px 20px 28px;
+}
+
+.menu > div:first-child,
+.menu > div:last-child,
+.title {
+  position: relative;
+  z-index: 1;
+}
+
+.menu > div:first-child {
+  order: 1;
+}
+
+.title {
+  order: 2;
+  width: min(980px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.menu > div:last-child {
+  order: 3;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.favicon {
+  position: static;
+  display: block;
+  width: 185px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.titl {
+  display: block;
+  width: fit-content;
+  min-width: 7em;
+  margin: 24px auto;
+  padding: 24px 34px;
+}
+
+.vs {
+  position: relative;
+  min-height: 18.5em;
+  height: auto;
+  padding-bottom: 46px;
+  border-width: 6px;
+}
+
+.time {
+  position: absolute;
+  right: 42px;
+  bottom: 14px;
+  margin: 0;
+  text-align: right;
+}
+
+.time1 {
+  position: absolute;
+  right: 12px;
+  bottom: 13px;
+  float: none;
+  margin: 0;
+}
+
+.map-block {
+  max-height: none;
+}
+
+.map-block p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 10px 0;
+  padding: 0;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.map-block a {
+  overflow-wrap: anywhere;
+}
+
+.map,
+.git,
+.adres,
+.phone1 {
+  flex: 0 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    gap: 12px;
+    padding: 14px 12px 24px;
+  }
+
+  .favicon {
+    width: 170px;
+  }
+
+  .title {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+  }
+
+  .menu > div:last-child {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .time {
+    right: 42px;
+    bottom: 14px;
+    text-align: right;
+  }
+
+  .time1 {
+    right: 12px;
+    bottom: 13px;
+  }
+}
+
+@media (max-width: 520px) {
+  .title {
+    font-size: 1.05rem;
+  }
+
+  .favicon {
+    width: 155px;
+  }
+
+  .titl {
+    min-width: 0;
+    padding: 20px 28px;
+  }
+}
+/* Final header logo/title placement. */
+.menu {
+  position: relative;
+  min-height: 245px;
+  padding-top: 34px;
+}
+
+.favicon {
+  position: absolute;
+  top: 10px;
+  left: 28px;
+  width: 250px;
+  height: auto;
+  margin: 0;
+}
+
+.title {
+  width: fit-content;
+  max-width: calc(100% - 340px);
+  margin-left: auto;
+  margin-right: auto;
+  white-space: nowrap;
+  font-size: clamp(1.55rem, 2.1vw, 2rem);
+}
+
+.menu > div:last-child {
+  margin-top: 0;
+}
+
+@media (max-width: 1024px) {
+  .menu {
+    min-height: 230px;
+    padding-top: 24px;
+  }
+
+  .favicon {
+    width: 210px;
+    left: 18px;
+  }
+
+  .title {
+    max-width: calc(100% - 260px);
+    font-size: clamp(1.1rem, 2.25vw, 1.45rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    min-height: 0;
+    padding-top: 14px;
+  }
+
+  .favicon {
+    position: static;
+    width: 180px;
+    margin: 0 auto;
+  }
+
+  .title {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    white-space: normal;
+    font-size: 1.2rem;
+  }
+}
+/* Visible top-left logo fix. */
+.menu > div:first-child {
+  position: absolute;
+  top: 10px;
+  left: 28px;
+  z-index: 2;
+}
+
+.favicon {
+  position: static;
+  width: 250px;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .menu > div:first-child {
+    top: 12px;
+    left: 18px;
+  }
+
+  .favicon {
+    width: 210px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu > div:first-child {
+    position: static;
+  }
+
+  .favicon {
+    width: 180px;
+    margin: 0 auto;
+  }
+}
+/* Logo/title spacing final. */
+.menu > div:first-child {
+  top: 8px;
+  left: 22px;
+}
+
+.favicon {
+  width: 280px;
+}
+
+.title {
+  margin-left: 310px;
+  margin-right: 24px;
+  max-width: calc(100% - 334px);
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+}
+
+@media (max-width: 1024px) {
+  .favicon {
+    width: 230px;
+  }
+
+  .title {
+    margin-left: 255px;
+    margin-right: 18px;
+    max-width: calc(100% - 273px);
+    font-size: clamp(1rem, 2.1vw, 1.35rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: calc(100vw - 24px);
+  }
+}

@@ -1,0 +1,164 @@
+@media (max-width: 1000px) {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    margin: 0;
+    padding: 16px;
+  }
+
+  h1 {
+    max-width: calc(100% - 16px);
+    padding: 10px clamp(20px, 8vw, 70px);
+    line-height: 1.2;
+    box-sizing: border-box;
+  }
+
+  h4 {
+    width: calc(100% - 16px);
+    padding: 10px clamp(18px, 5vw, 70px);
+    line-height: 1.45;
+    box-sizing: border-box;
+  }
+
+  .bn {
+    width: min(400px, 100%);
+  }
+
+  img,
+  .container,
+  .container1,
+  .he5,
+  .et,
+  .et2 {
+    max-width: 100%;
+  }
+
+  .he5 {
+    margin: 50px auto 24px;
+  }
+
+  .container1 {
+    grid-template-columns: 1fr;
+  }
+
+  .et2 {
+    grid-column: auto;
+    width: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 12px;
+  }
+
+  h1,
+  h4,
+  .he5,
+  .container1,
+  .et,
+  .et2 {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    font-size: 1.2rem;
+    line-height: 1.25;
+  }
+
+  h2 {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h4 {
+    display: block;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding: 10px 14px;
+    font-size: 0.95rem;
+    line-height: 1.45;
+  }
+
+  h1,
+  h4,
+  p,
+  span {
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .bn {
+    width: min(400px, calc(100vw - 24px));
+    max-width: calc(100vw - 24px);
+  }
+
+  .he5 {
+    height: auto;
+    min-height: 0;
+    padding: 28px 10px;
+  }
+
+  .row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+    padding: 0 8px;
+  }
+
+  .row span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+  }
+
+  .row span:last-child {
+    justify-self: start;
+    text-align: left;
+    white-space: normal;
+    font-weight: 700;
+  }
+
+  .container1 {
+    gap: 18px;
+  }
+
+  .et,
+  .et2 {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 18px 10px 12px;
+    text-align: left;
+  }
+
+  .et1 {
+    float: none;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .et p,
+  .et2 p {
+    width: 100%;
+    margin: 6px 0 0;
+  }
+}
