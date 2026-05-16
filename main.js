@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener("DOMContentLoaded", () => {
 
     const dishes = {
-        "борщ": "../recipesoftheclub/borsh.html",
-        "панакота с агар агаром": "/recipesoftheclub/panakota.html",
+        "борщ": "/Dishes/recipesoftheclub/borsh.html",
+        "панакота с агар агаром": "/Dishes/recipesoftheclub/panakota.html",
         "рассыпчатый плов с говядиной": "/Dishes/recipesoftheclub/plov.html",
         "суп суюк ош": "/Dishes/recipesoftheclub/suk osh.html",
         "хачапури по-аджарски": "/Dishes/recipesoftheclub/hachapuri.html",
