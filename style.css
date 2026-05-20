@@ -793,9 +793,10 @@ img {
 
 .favicon {
   position: static;
-  width: 430px;
-  margin-top: -30px;
-  margin-left: -100px;
+  width: 350px;
+  height: 200px;
+  margin-top: -10px;
+  margin-left: -70px;
 }
 
 .title {
